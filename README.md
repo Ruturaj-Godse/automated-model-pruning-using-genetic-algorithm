@@ -5,22 +5,14 @@ This project presents a simple framework for optimizing deep neural networks thr
 ## Outline of the Code Repository
 ```
 ├── LeNet
-│   ├── lenet.py
-│   └── lenet_ckpt.pth
+│   ├── lenet.py: Python script implementing LeNet-5 model using PyTorch
+│   └── lenet_ckpt.pth: Model file storing weights of LeNet-5 model trained on MNIST dataset
 ├── ResNet
-│   ├── resnet.py
-│   └── resnet_ckpt.pth
-├── plotting.ipynb
-├── pruning.py
-├── solutions
-│   ├── LeNet
-│   └── ResNet
-├── sparse_models
-│   ├── LeNet
-│   │   ├── sparse_weights.pth
-│   │   └── sparse_weights_retrained.pth
-│   └── ResNet
-│       ├── sparse_weights.pth
-│       └── sparse_weights_retrained.pth
-└── utils.py
+│   ├── resnet.py: Python script implementing ResNet-18 model using PyTorch
+│   └── resnet_ckpt.pth: Model file storing weights of ResNet-18 model trained on CIFAR-10 dataset
+├── plotting.ipynb: Jupyter Notebook plotting graphs to visualize the obtained results
+├── pruning.py: The main file implementing the logic for automated pruning of neural networks using Genetic Algorithm
+├── solutions: Folder storing the solutions (best prune masks) for LeNet and ResNet models
+├── sparse_models: Folder storing weights of LeNet and ResNet models after applying the prune masks and after retraining.
+└── utils.py: Python script implementing the utility functions required by the main code.
 ```
