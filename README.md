@@ -1,1 +1,1 @@
-# automated-model-pruning-using-genetic-algorithm
+# Automated Model Pruning using Genetic Algorithm
