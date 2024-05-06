@@ -4,9 +4,9 @@ This project presents a simple framework for optimizing deep neural networks thr
 
 ## Outline of the Code Repository
 ```
-├── LeNet
-│   ├── lenet.py: Python script implementing LeNet-5 model using PyTorch
-│   └── lenet_ckpt.pth: Model file storing weights of LeNet-5 model trained on MNIST dataset
+├── **LeNet**
+│   ├── **lenet.py**: Python script implementing LeNet-5 model using PyTorch
+│   └── **lenet_ckpt.pth**: Model file storing weights of LeNet-5 model trained on MNIST dataset
 ├── ResNet
 │   ├── resnet.py: Python script implementing ResNet-18 model using PyTorch
 │   └── resnet_ckpt.pth: Model file storing weights of ResNet-18 model trained on CIFAR-10 dataset
