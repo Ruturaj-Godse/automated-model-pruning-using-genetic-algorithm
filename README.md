@@ -18,3 +18,28 @@ This project presents a simple framework for optimizing deep neural networks thr
 </pre>
 
 
+## How to Run the Code
+Make sure you are working on a system having a GPU with CUDA installed.
+
+1. To prune a specific layer of the model:
+   ```
+   python pruning.py <model> --layer <layer name>
+   ```
+   For example:
+   ```
+   python pruning.py --resnet --layer module.layer4.0.conv2
+   ```
+2. To prune all the layers of a model
+   ```
+   python pruning.py <model>
+   ```
+   For example:
+   ```
+   python pruning.py --lenet
+   ```
+3. To further fine-tune a pruned model:
+   ```
+   python pruning.py --finetune
+   ```
+   (currently only ResNet-18 is supported for fine-tuning, LeNet-5 doesn't require further fine-tuning)
+
