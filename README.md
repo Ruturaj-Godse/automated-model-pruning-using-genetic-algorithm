@@ -43,3 +43,9 @@ Make sure you are working on a system having a GPU with CUDA installed.
    ```
    (currently only ResNet-18 is supported for fine-tuning, LeNet-5 doesn't require further fine-tuning)
 
+
+**Model and Layer Names:**
+1. lenet
+   - a
+2. resnet
+   
