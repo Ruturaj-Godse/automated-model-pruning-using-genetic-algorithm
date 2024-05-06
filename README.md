@@ -45,7 +45,65 @@ Make sure you are working on a system having a GPU with CUDA installed.
 
 
 **Model and Layer Names:**
+```
 1. lenet
-   - a
+   -  module.feature.0
+   -  module.feature.1
+   -  module.feature.2
+   -  module.feature.3
+   -  module.feature.4
+   -  module.feature.5
+   -  module.classifier.0
+   -  module.classifier.1
+   -  module.classifier.2
+   -  module.classifier.3
+   -  module.classifier.4
+   -  module.classifier.5
 2. resnet
-   
+   -  module.conv1
+   -  module.bn1
+   -  module.layer1.0.conv1
+   -  module.layer1.0.bn1
+   -  module.layer1.0.conv2
+   -  module.layer1.0.bn2
+   -  module.layer1.0.shortcut
+   -  module.layer1.1.conv1
+   -  module.layer1.1.bn1
+   -  module.layer1.1.conv2
+   -  module.layer1.1.bn2
+   -  module.layer1.1.shortcut
+   -  module.layer2.0.conv1
+   -  module.layer2.0.bn1
+   -  module.layer2.0.conv2
+   -  module.layer2.0.bn2
+   -  module.layer2.0.shortcut.0
+   -  module.layer2.0.shortcut.1
+   -  module.layer2.1.conv1
+   -  module.layer2.1.bn1
+   -  module.layer2.1.conv2
+   -  module.layer2.1.bn2
+   -  module.layer2.1.shortcut
+   -  module.layer3.0.conv1
+   -  module.layer3.0.bn1
+   -  module.layer3.0.conv2
+   -  module.layer3.0.bn2
+   -  module.layer3.0.shortcut.0
+   -  module.layer3.0.shortcut.1
+   -  module.layer3.1.conv1
+   -  module.layer3.1.bn1
+   -  module.layer3.1.conv2
+   -  module.layer3.1.bn2
+   -  module.layer3.1.shortcut
+   -  module.layer4.0.conv1
+   -  module.layer4.0.bn1
+   -  module.layer4.0.conv2
+   -  module.layer4.0.bn2
+   -  module.layer4.0.shortcut.0
+   -  module.layer4.0.shortcut.1
+   -  module.layer4.1.conv1
+   -  module.layer4.1.bn1
+   -  module.layer4.1.conv2
+   -  module.layer4.1.bn2
+   -  module.layer4.1.shortcut
+   -  module.linear
+```
