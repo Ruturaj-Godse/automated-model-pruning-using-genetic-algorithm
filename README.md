@@ -10,7 +10,7 @@ This project presents a simple framework for optimizing deep neural networks thr
 ├── <b>ResNet</b>
 │   ├── <b>resnet.py</b>: Python script implementing ResNet-18 model using PyTorch
 │   └── <b>resnet_ckpt.pth</b>: Model file storing weights of ResNet-18 model trained on CIFAR-10 dataset
-├── <b>plotting.ipynb</b>: Jupyter Notebook plotting graphs to visualize the obtained results
+├── <b>plotting.ipynb</b>: Jupyter notebook plotting graphs to visualize the obtained results
 ├── <b>pruning.py (the main file)</b>: Python script implementing the logic for automated pruning of neural networks using Genetic Algorithm
 ├── <b>solutions</b>: Folder storing the solutions (best prune masks) for LeNet and ResNet models
 ├── <b>sparse_models</b>: Folder storing weights of LeNet and ResNet models after applying the prune masks and retraining
