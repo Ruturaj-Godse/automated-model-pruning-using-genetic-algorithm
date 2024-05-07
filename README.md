@@ -1,6 +1,6 @@
 # Automated Model Pruning using Genetic Algorithm
 
-This project presents a simple framework for optimizing deep neural networks through automated pruning using Genetic Algorithm. Our approach aims to reduce model complexity and enhance computational efficiency without significantly compromising accuracy. In contrast to traditional pruning techniques, our approach doesn't use any rule-based method or strategy to prune the weights. Rather, our system uses the Genetic Algorithm to learn which weights can be pruned and which are critical. The Genetic Algorithm over generations learns the best pruning mask to be applied on each layer in order to achieve maximum sparsity while maintaining accuracy. We do not need to specify any knowledge about the model or the pruning technique to be used. This framework can be used as a push-the-button solution for significantly pruning any pre-trained model within a few hours. The framework also presents an option to prune each layer of the model independently and thus can be easily scaled for large models using distributed systems. 
+This project presents a simple framework for optimizing deep neural networks through automated pruning using Genetic Algorithm. Our approach aims to reduce model complexity and enhance computational efficiency without significantly compromising accuracy. In contrast to traditional pruning techniques, our approach does not make any assumptions regarding the importance of weights or use any rule-based method to prune the weights. Rather, our system uses the Genetic Algorithm to learn which weights can be pruned and which are critical. The Genetic Algorithm over generations learns the best pruning mask to be applied on each layer in order to achieve maximum sparsity while maintaining accuracy. We do not need to specify any knowledge about the model or the pruning technique to be used. Moreover, this framework can be used as a push-the-button solution for significantly pruning any pre-trained model within a few hours. The framework also presents an option to prune each layer of the model independently and thus can be easily scaled for large models using distributed systems. 
 
 ## Outline of the Code Repository
 <pre>
@@ -110,7 +110,7 @@ Make sure you are working on a system having a GPU with CUDA installed.
 
 ## Results
 
-We ran the pruning algorithm on the LeNet-5 model using MNIST dataset and ResNet-18 model using CIFAR-10 dataset.
+We ran our pruning algorithm on the LeNet-5 model using the MNIST dataset and the ResNet-18 model using the CIFAR-10 dataset.
 
 ### LeNet-5
 The Genetic Algorithm was run for 25 generations (per layer) taking around 15 minutes (per layer) to come up with the best prune mask and fine-tune the model.
