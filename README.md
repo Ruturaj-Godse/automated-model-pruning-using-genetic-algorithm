@@ -112,4 +112,8 @@ Make sure you are working on a system having a GPU with CUDA installed.
 
 We ran the pruning algorithm on the LeNet-5 model using MNIST dataset and ResNet-18 model using CIFAR-10 dataset.
 
-![alt text](https://drive.google.com/file/d/1yiGuPm7gFoN9v_uvnVKB5UbzJgVrpJmd/view?usp=sharing)
+![sparsity_vs_no_of_layers_pruned_lenet.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_vs_no_of_layers_pruned_lenet.png)
+
+![sparsity_per_layer_lenet.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_per_layer_lenet.png)
+
+The algorithm was able to generate 94.43% sparsity in the LeNet model while maintaining the accuracy at 97.9%.
