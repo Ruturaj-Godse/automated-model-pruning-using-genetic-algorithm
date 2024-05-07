@@ -112,8 +112,26 @@ Make sure you are working on a system having a GPU with CUDA installed.
 
 We ran the pruning algorithm on the LeNet-5 model using MNIST dataset and ResNet-18 model using CIFAR-10 dataset.
 
+### LeNet-5
+The Genetic Algorithm was run for 25 generations (per layer) taking around 15 minutes (per layer) to come up with the best prune mask and fine-tune the model.
+
 ![sparsity_vs_no_of_layers_pruned_lenet.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_vs_no_of_layers_pruned_lenet.png)
+
+The algorithm was able to generate 94.43% sparsity in the LeNet-5 model while maintaining the accuracy at 97.9%.
 
 ![sparsity_per_layer_lenet.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_per_layer_lenet.png)
 
-The algorithm was able to generate 94.43% sparsity in the LeNet model while maintaining the accuracy at 97.9%.
+The algorithm was able to prune each layer by more than 93%. 
+
+### ResNet-18
+The Genetic Algorithm was run for 15 generations (per layer) taking around 10 minutes (per layer) to come up with the best prune mask and fine-tune the model. The algorithm was run for two iterations, compressing each layer to 60% in the first iteration and then to as much as possible in the second iteration.
+
+![sparsity_vs_no_of_layers_pruned_resnet_two_iter.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_vs_no_of_layers_pruned_resnet_two_iter.png)
+
+The algorithm was able to generate 78.91% sparsity in the ResNet-18 model while maintaining the accuracy at 89.62%.
+
+![sparsity_per_layer_resnet_2_iter.png](https://github.com/Ruturaj-Godse/automated-model-pruning-using-genetic-algorithm/blob/main/results/sparsity_per_layer_resnet_2_iter.png)
+
+We can see significant variation in the amount of sparsity achieved in each layer, showing that each layer is not compressable by the same amount. It's best not to make any assumptions regarding the importance of weights while designing the pruning algorithm. Our algorithm is able to learn the importance of weights completely on its own without any bias towards magnitude or correlation, any domain knowledge, or any kind of input from the user.
+
+
