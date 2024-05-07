@@ -134,4 +134,14 @@ The algorithm was able to generate 78.91% sparsity in the ResNet-18 model while 
 
 We can see significant variation in the amount of sparsity achieved in each layer, showing that each layer is not compressable by the same amount. It's best not to make any assumptions regarding the importance of weights while designing the pruning algorithm. Our algorithm is able to learn the importance of weights completely on its own without any bias towards magnitude or correlation, any domain knowledge, or any kind of input from the user.
 
+Comparison with other methods:
+| Method            | Accuracy %      | Parameters (in millions)     | Sparsity % |
+|-------------------|:---------------:|:----------------------------:|:----------:|
+| PIY            | 91.23           | 6.11                         | 45.31      |
+| CACP          | 92.03           | 3.50                         | 68.66      |
+| P-SLR        | 90.37           | 1.34                         | 88.02      |
+| PCNN         | 96.38           | 3.80                         | 66.01      |
+| CRL               | 90.97           | 2.52                         | 77.46      |
+| AMPGA (ours)         | 90.01           | 2.83                         | 74.68      |
+| **AMPGA 2-iter (ours)**  | **89.62**           | **2.35**                        | **78.91**      |
 
