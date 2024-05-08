@@ -29,6 +29,9 @@ Make sure you are working on a system having a GPU with CUDA installed.
    ```
    python pruning.py --resnet --layer module.layer4.0.conv2
    ```
+   ```
+   python pruning.py --lenet --layer module.classifier.3
+   ```
 2. To prune all the layers of a model
    ```
    python pruning.py <model>
