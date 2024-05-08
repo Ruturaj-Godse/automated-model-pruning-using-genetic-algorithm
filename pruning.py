@@ -17,8 +17,8 @@ import torchvision
 import torchvision.transforms as transforms
 
 from utils import progress_bar, get_accuracy, get_module_by_name, get_module_names
-from resnet import ResNet18
-from lenet import LeNet
+from ResNet.resnet import ResNet18
+from LeNet.lenet import LeNet
 
 
 args = None             # command line arguments
